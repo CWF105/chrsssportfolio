@@ -5,8 +5,12 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #d1d1d1;
+}
 
 header {
+    background-color: white;
     nav {
         padding: 20px;
         ul{
@@ -30,13 +34,13 @@ header {
                 color: #6E07F3;
             }
 
-            #portfolio {
+            .portfolio {
                 border: 2px solid #6E07F3;
                 border-radius: 30px;
                 transition: 130ms;
                 color: #6E07F3;
             }
-            #portfolio:hover {
+            .portfolio:hover {
                     background-color: #6E07F3;
                     color: white;
                     box-shadow: 3px 3px 2px #4553879a;
@@ -46,6 +50,7 @@ header {
 }
 
 main {
+    margin-bottom: 100px;
     .homepage {
 
         background-image: url("assets/images/bg2.jpg");
@@ -81,9 +86,12 @@ main {
     .aboutme {
         background-color: #6E07F3;
         margin-top: 150px;
-        margin-bottom: 20px;
-        padding: 10px;
-        
+        margin-bottom: 1px;
+        padding-bottom: 1px;
+        display: flex;
+        flex-direction: column;
+
+
         p {
             display: flex;
             align-items: center;
@@ -151,29 +159,19 @@ main {
 
             .grid2 {
                 margin-top: 50px;
-                fieldset {
-                    legend {
-                        color: white;
-                        font-weight: lighter;
-                        font-size: 19px;
-                    }
-
-                    width: 100%;
-                }
-
+                
                 .col {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-
                     .col1 {
                         .education {
-                            span {
+                            margin-bottom: 15px;
+
+                            .bb {
                                 font-size: 13px;
                                 color: white;
                                 background-color: #ce2849;
-                                width: 100px;
+                                width: 200px;
                                 height: 30px;
-                                padding: 5px 30px 5px 5px;
+                                padding: 5px 20px 5px 20px;
                                 border-top-left-radius: 10px;
                                 border-bottom-left-radius: 10px;
                                 border-bottom-right-radius: 30px;
@@ -184,22 +182,93 @@ main {
                                 border-radius: 5px;
                                 background-color: #640ad9;
                                 line-height: 20px;
-                                .course {
-                                }
+
                                 .school {
                                     font-size: 11px;
                                 }
                             }
-                            
-                            
-                            
                         }
                     }
-                    .col2 {
-                        
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        background-color: white;
+        .skills {
+            border-radius: 10px;
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            border-radius: 1px solid rgba(128, 128, 128, 0.463);
+
+            .one {
+                h2 {
+                    text-align: center;
+                    color: #6E07F3;
+                    margin-bottom: 10px;
+                }
+                
+                .codingSkills {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 10px;
+                    column-gap: 40px;
+                    margin-inline: 300px;
+
+                    .skill {
+                        cursor: pointer;
+                        text-align: center;
+                        border-radius: 5px;
+                        background-color: rgb(195, 195, 195);
+                        padding: 7px;
+                        transition: 200ms;
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+                    .skill:hover {
+                        transform: scale(1.02);
+                        background-color: rgb(204, 94, 94);
+                        color: white;
                     }
                 }
+            }
+            .two {
+                margin-top: 50px;
 
+                h2 {
+                    text-align: center;
+                    color: #6E07F3;
+                    margin-bottom: 10px;
+                }
+                .tools {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 10px;
+                    column-gap: 40px;
+                    margin-inline: 300px;
+
+                    .tool {
+                        cursor: pointer;
+                        text-align: center;
+                        border-radius: 5px;
+                        background-color: rgb(195, 195, 195);
+                        padding: 7px;
+                        transition: 200ms;
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+                    .tool:hover {
+                        transform: scale(1.02);
+                        background-color: rgb(204, 94, 94);
+                        color: white;
+                    }
+                }
             }
         }
     }
