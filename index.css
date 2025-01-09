@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #d1d1d1;
 }
@@ -46,6 +49,23 @@ header {
                     box-shadow: 3px 3px 2px #4553879a;
             }
         }
+    }
+    #onScroll {
+        position: fixed;
+        right: 3px;
+        bottom: 3px;
+        background-color: #6E07F3;
+        border-radius: 5px;
+        border: 1px solid gray;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        z-index: 99;
+        padding: 5px;
+        width: 50px;
+    }
+    #onScroll:hover {
+        background-color: #ce2849;
     }
 }
 
