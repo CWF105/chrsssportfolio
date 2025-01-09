@@ -238,7 +238,7 @@ main {
                     margin-inline: 300px;
 
                     .skill {
-                        cursor: pointer;
+                        cursor: help;
                         text-align: center;
                         border-radius: 5px;
                         background-color: rgb(195, 195, 195);
@@ -272,7 +272,7 @@ main {
                     margin-inline: 300px;
 
                     .tool {
-                        cursor: pointer;
+                        cursor: help;
                         text-align: center;
                         border-radius: 5px;
                         background-color: rgb(195, 195, 195);
@@ -289,6 +289,22 @@ main {
                         color: white;
                     }
                 }
+            }
+
+        }
+        .projects {
+            color: white;
+            background-color: #1d1d1d;
+            padding: 20px 200px;
+            border-top: 1px solid rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .grid {
+                display: grid;
+                /* grid-template-columns: ; */
             }
         }
     }
