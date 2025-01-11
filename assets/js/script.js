@@ -1,4 +1,10 @@
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.navs');
 
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('toggle');
+});
 
 function openModal(title) {
     switch(title) {

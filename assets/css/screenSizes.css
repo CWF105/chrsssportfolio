@@ -1,0 +1,852 @@
+/* LAPTOPS LARGE */
+@media(min-width: 1440px) {
+    header nav {padding: 20px;}
+    header nav ul a li { 
+        font-size: 13px;
+        #onScroll {width: 45px;}
+    }
+}
+
+/* LAPTOP SMALL */
+@media(min-width: 1024px) and (max-width: 1439px) {
+    header{ 
+        nav {
+            padding: 10px;
+            ul a li { font-size: 10px;}
+        }
+        #onScroll {width: 38px; padding: 0px;}
+    }
+    main {
+        .homepage {
+            height: 485px;
+            .content {
+                height: 485px;
+                h1 { font-size: 1.5rem;}
+                p { font-size: 0.7rem;}
+            } 
+        }
+        .aboutme {
+            margin-top: 100px;
+            .container {
+                margin-left: 90px;
+                h2{
+                    margin-bottom: 45px;
+                }
+                .grid {
+                    .col1 {
+                        img{ 
+                            height: 240px;
+                        }
+                        .boxshadow {
+                            position: absolute;
+                            top: -7px;
+                            right: -7px;
+                            height: 240px;
+                        }
+                    }
+                    .col2 {
+                        line-height: 25px;
+                        .cc { margin-bottom: 18px;}
+                        .person { font-size: 10px;}
+                    }
+                }
+                .grid2 {
+                    margin-top: 40px;
+                    .col .col1 .education {
+                        margin-bottom: 10px;
+                        .bb {
+                            font-size: 5px;
+                        }
+                        .con {
+                            line-height: 15px;
+                            .school {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio {
+            .skills {
+                .one {
+                    h2 {
+                        margin-bottom: 9px;
+                    }
+                    .codingSkills {
+                        margin-inline: 200px;
+                    }
+                }
+                .two {
+                    .tools {
+                        margin-inline: 200px;
+                    }
+                }
+            }
+            .projects {
+                padding: 20px 50px;
+            }
+        }
+    }
+}
+
+/* TABLES */
+@media(min-width: 768px) and (max-width: 1023px) {
+    header {
+        nav {
+            padding: 10px;
+            ul {
+                gap: 50px;
+                a{ 
+                    padding: 5px;
+                    li{ font-weight: 500;}
+                }
+                .portfolio {border: 1px solid #6E07F3; border-radius: 20px;}
+            }
+        }
+        #onScroll { width: 30px; padding: 0;}
+    }
+    main {
+        .homepage {
+            height: 300px;
+            .content {
+                height: 300px;
+                h1 {font-size: 1rem;}
+                p {font-size: 0.75rem;}
+            }
+        }
+        .aboutme {
+            margin-top: 50px;
+            p span {width: 20px;}
+            .container {
+                margin-left: 10px;
+                h2 {margin-bottom: 20px;font-size: 16px;}
+                .grid {
+                    .col1 {
+                        .img{
+                            width: 160px;
+                            height: 200px;
+                        }
+                        .boxshadow{
+                            width: 160px;
+                            height: 200px;
+                            top: -7px;
+                            right: -7px;
+                            img {
+                                width: 160px;
+                                height: 200px;
+                            }
+                        }
+                    }
+                    .col2 {
+                        margin-left: 20px;
+                        line-height: 20px;
+                        .cc {margin-bottom: 10px; font-size: 0.80rem;}
+                        q { font-size: 0.70rem;}
+                        .person { font-size: 10px;}
+                    }
+                    .grid2 {
+                        margin-top: 20px;
+                        .col .col1 .education {
+                            .bb {
+                                font-size: 9px;
+                                width: 100px;
+                            }
+                            .con {
+                                margin-left: 10px;
+                                padding: 1px;
+                                line-height: 10px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio {
+            .skills {
+                padding: 10px;
+                .one {
+                    h2 {font-size: 1rem;}
+                    .codingSkills {
+                        gap: 3px;
+                        column-gap: 3px;
+                        margin-inline: 100px;
+                        .skill {padding: 5px;}
+                    }
+                }
+                .two {
+                    margin-top: 10px;
+                    h2 {font-size: 1rem;}
+                    .tools {
+                        gap: 3px;
+                        column-gap: 3px;
+                        margin-inline: 100px;
+                        .tool {padding: 5px;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MOBILE LARGE */
+@media(min-width: 425px) and (max-width: 767px) {
+    header {
+        nav {
+            
+            .nab {
+                border-bottom: 1px solid rgba(128, 128, 128, 0.464);
+               display: flex;
+               justify-content: end;
+               align-items: end;
+                background-color: white;
+                position: fixed;
+                padding: 10px;
+                margin-bottom: 20px;
+                top: 0px;
+                .hamburger {
+                    z-index: 300;
+                    display: flex;
+                }
+           }
+            ul {
+                position: fixed;
+                top: 40px;
+                right: -100%;
+                flex-direction: column;
+                background-color: rgb(227, 227, 227);
+                height: fit-content;
+                align-items: center;
+                gap: 10px;
+                padding-top: 5px;
+                transition: right 0.3s ease-in-out;
+                z-index: 300;
+                a  {
+                    text-align: center;
+                    li {
+                        width: 200px;
+                    }
+                }
+                .portfolio { border: none; border-radius: 0;}
+            }
+        
+            ul.active {
+                right: 0;
+            }
+        }
+        .hamburger {
+            display: flex;
+            z-index: 300;
+        }
+        #onScroll {width: 25px; padding: 1px; font-size: 10px;}
+    }
+    main {
+        margin-bottom: 1px;
+        .homepage {
+            height: 450px;
+            .content {
+                height: 450px;
+                h1 {font-size: 0.85rem;}
+                p {font-size: 0.70rem}
+            }
+        }
+        .aboutme {
+            margin-top: 30px;
+            .container {
+                display: flex;
+                flex-direction: column;               
+                padding: 10px;
+                margin-left: 5px;
+                
+                h2{ font-size: 0.90rem;margin-bottom: 20px;}
+                .grid {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;                    
+                    .col1 {
+                        .img {
+                            width: 130px;
+                            height: 150px;
+                        } 
+                        .boxshadow {
+                            top: -10px;
+                            left: -10px;
+                            img {
+                                width: 130px;
+                                height: 150px;  
+                            }
+                        }
+                    }
+                    .col2 {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                        line-height: 20px;
+                        .cc { font-size: 0.70rem;}
+                        q { font-size: 0.68rem;}
+                        .person { font-size: 0.65rem;}
+                    }
+                }
+                .grid2 {
+                    margin-top: 100px;
+                    h2{font-size: 0.90rem}
+                    .col .col1{
+                        display: flex;
+                        flex-direction: column;
+
+                        .education{ 
+                            margin-bottom: 10px;
+                            .bb {font-size: 0.5rem; width: 200px;}
+                            .con {font-size: 0.580rem}
+                        }
+                    } 
+                }
+            }
+        }
+        .portfolio {
+            .skills {
+                padding: 10px;
+
+                .one {
+                    h2 {font-size: 0.80rem;}
+                    .codingSkills {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        padding: 30px;
+                        gap: 3px;
+                        column-gap: 0;
+                        margin-inline: 10px;
+                        
+                        .skill {
+                            padding: 5px;
+                            width: 100px;
+                            height: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+                .two {
+                    margin-top: 30px;
+                    h2 {font-size: 0.80rem;}
+                    .tools {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        padding: 30px;
+                        gap: 3px;
+                        column-gap: 0;
+                        margin-inline: 10px;
+
+                        .tool {
+                            padding: 5px;
+                            width: 100px;
+                            height: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 60px;
+                            }                        }
+                    }
+                }
+            }
+            .projects {
+                h2 {font-size: 0.80rem;}
+            }
+        }
+        .contacts {
+            padding: 10px;
+            h3 {
+                font-size: 0.80rem;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            form {
+                width: 400px;
+                p { font-weight: 0.65rem;}
+                .inputs { 
+                    label {
+                        font-size: 0.70rem;
+                    }
+                    input {
+                        width: 350px;
+                        font-size: 0.60rem;
+                    }
+                    textarea {
+                        width: 350px;
+                    }
+                }
+                button {
+                    width: 100px;
+                    font-size: 0.60rem;
+                    height: 30px;
+                }
+                .or {
+                    font-size: 0.60rem;
+                }
+                .links {
+                    gap: 10px;
+                    img {width: 20px;}
+                }
+            }
+        }
+    }
+}
+
+/* MOBILE MEDIUM */
+@media(min-width: 375px) and (max-width: 424px) {
+    header {
+        nav {
+                
+            .nab {
+                border-bottom: 1px solid rgba(128, 128, 128, 0.464);
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                background-color: white;
+                position: fixed;
+                padding: 10px;
+                margin-bottom: 20px;
+                top: 0px;
+                .hamburger {
+                    z-index: 300;
+                    display: flex;
+                }
+        }
+            ul {
+                position: fixed;
+                top: 40px;
+                right: -100%;
+                flex-direction: column;
+                background-color: rgb(227, 227, 227);
+                height: fit-content;
+                align-items: center;
+                gap: 10px;
+                padding-top: 5px;
+                transition: right 0.3s ease-in-out;
+                z-index: 300;
+                a  {
+                    text-align: center;
+                    li {
+                        width: 200px;
+                    }
+                }
+                .portfolio { border: none; border-radius: 0;}
+            }
+        
+            ul.active {
+                right: 0;
+            }
+        }
+        .hamburger {
+            display: flex;
+            z-index: 300;
+        }
+        #onScroll {width: 25px; padding: 1px; font-size: 10px;}
+    }
+    main {
+        margin-bottom: 1px;
+        .homepage {
+            height: 450px;
+            .content {
+                height: 450px;
+                h1 {font-size: 0.85rem;}
+                p {font-size: 0.70rem}
+            }
+        }
+        .aboutme {
+            margin-top: 30px;
+            .container {
+                display: flex;
+                flex-direction: column;               
+                padding: 10px;
+                margin-left: 5px;
+                
+                h2{ font-size: 0.90rem;margin-bottom: 20px;}
+                .grid {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;                    
+                    .col1 {
+                        .img {
+                            width: 130px;
+                            height: 150px;
+                        } 
+                        .boxshadow {
+                            top: -10px;
+                            left: -10px;
+                            img {
+                                width: 130px;
+                                height: 150px;  
+                            }
+                        }
+                    }
+                    .col2 {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                        line-height: 20px;
+                        .cc { font-size: 0.70rem;}
+                        q { font-size: 0.68rem;}
+                        .person { font-size: 0.65rem;}
+                    }
+                }
+                .grid2 {
+                    margin-top: 100px;
+                    h2{font-size: 0.90rem}
+                    .col .col1{
+                        display: flex;
+                        flex-direction: column;
+
+                        .education{ 
+                            margin-bottom: 10px;
+                            .bb {font-size: 0.5rem; width: 200px;}
+                            .con {font-size: 0.580rem}
+                        }
+                    } 
+                }
+            }
+        }
+        .portfolio {
+            .skills {
+                padding: 10px;
+
+                .one {
+                    h2 {font-size: 0.80rem;}
+                    .codingSkills {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        padding: 30px;
+                        gap: 3px;
+                        column-gap: 0;
+                        margin-inline: 10px;
+                        
+                        .skill {
+                            padding: 5px;
+                            width: 85px;
+                            height: 85px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50px;
+                            }
+                        }
+                    }
+                }
+                .two {
+                    margin-top: 30px;
+                    h2 {font-size: 0.80rem;}
+                    .tools {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        padding: 30px;
+                        gap: 3px;
+                        column-gap: 0;
+                        margin-inline: 10px;
+
+                        .tool {
+                            padding: 5px;
+                            width: 85px;
+                            height: 85px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50px;
+                            }                        }
+                    }
+                }
+            }
+            .projects {
+            padding: 0px;
+                h2 {font-size: 0.80rem;}
+                .gallery {
+                    padding-block: 10px;
+                    row-gap: 20px;
+                    column-gap: 40px;
+                    img {
+                        width: 300px;
+                    }
+                }
+                .modal{
+                    h2 {font-size: 0.70rem; margin-top: 20px;}
+                    .modal-gallery{
+                        margin-top: 35px;
+                        padding: 10px;
+                        img {
+                            width: 310px;
+                        }
+                    }
+                }            
+            }
+        }
+        .contacts {
+            padding: 10px;
+            h3 {
+                font-size: 0.80rem;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            form {
+                width: 350px;
+                p { font-weight: 0.65rem;}
+                .inputs { 
+                    label {
+                        font-size: 0.70rem;
+                    }
+                    input {
+                        width: 300px;
+                        font-size: 0.60rem;
+                    }
+                    textarea {
+                        width: 300px;
+                    }
+                }
+                button {
+                    width: 100px;
+                    font-size: 0.60rem;
+                    height: 30px;
+                }
+                .or {
+                    font-size: 0.60rem;
+                }
+                .links {
+                    gap: 10px;
+                    img {width: 20px;}
+                }
+            }
+        }
+    }
+}
+/* MOBILE SMALL */
+@media(min-width: 320px) and (max-width: 374px) {
+    header {
+        nav {
+                
+            .nab {
+                border-bottom: 1px solid rgba(128, 128, 128, 0.464);
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                background-color: white;
+                position: fixed;
+                padding: 10px;
+                margin-bottom: 20px;
+                top: 0px;
+                .hamburger {
+                    z-index: 300;
+                    display: flex;
+                }
+        }
+            ul {
+                position: fixed;
+                top: 40px;
+                right: -100%;
+                flex-direction: column;
+                background-color: rgb(227, 227, 227);
+                height: fit-content;
+                align-items: center;
+                gap: 10px;
+                padding-top: 5px;
+                transition: right 0.3s ease-in-out;
+                z-index: 300;
+                a  {
+                    text-align: center;
+                    li {
+                        width: 200px;
+                    }
+                }
+                .portfolio { border: none; border-radius: 0;}
+            }
+        
+            ul.active {
+                right: 0;
+            }
+        }
+        .hamburger {
+            display: flex;
+            z-index: 300;
+        }
+        #onScroll {width: 25px; padding: 1px; font-size: 10px;}
+    }
+    main {
+        margin-bottom: 1px;
+        .homepage {
+            height: 450px;
+            .content {
+                height: 450px;
+                h1 {font-size: 0.85rem;}
+                p {font-size: 0.70rem}
+            }
+        }
+        .aboutme {
+            margin-top: 30px;
+            .container {
+                display: flex;
+                flex-direction: column;               
+                padding: 10px;
+                margin-left: 5px;
+                
+                h2{ font-size: 0.90rem;margin-bottom: 20px;}
+                .grid {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;                    
+                    .col1 {
+                        .img {
+                            width: 130px;
+                            height: 150px;
+                        } 
+                        .boxshadow {
+                            top: -10px;
+                            left: -10px;
+                            img {
+                                width: 130px;
+                                height: 150px;  
+                            }
+                        }
+                    }
+                    .col2 {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                        line-height: 20px;
+                        .cc { font-size: 0.70rem;}
+                        q { font-size: 0.68rem;}
+                        .person { font-size: 0.65rem;}
+                    }
+                }
+                .grid2 {
+                    margin-top: 100px;
+                    h2{font-size: 0.90rem}
+                    .col .col1{
+                        display: flex;
+                        flex-direction: column;
+
+                        .education{ 
+                            margin-bottom: 10px;
+                            .bb {font-size: 0.5rem; width: 200px;}
+                            .con {font-size: 0.580rem}
+                        }
+                    } 
+                }
+            }
+        }
+        .portfolio {
+            .skills {
+                padding: 10px;
+
+                .one {
+                    h2 {font-size: 0.80rem;}
+                    .codingSkills {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        padding: 30px;
+                        gap: 3px;
+                        column-gap: 0;
+                        margin-inline: 10px;
+                        
+                        .skill {
+                            padding: 5px;
+                            width: 70px;
+                            height: 70px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50px;
+                            }
+                        }
+                    }
+                }
+                .two {
+                    margin-top: 30px;
+                    h2 {font-size: 0.80rem;}
+                    .tools {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        padding: 30px;
+                        gap: 3px;
+                        column-gap: 0;
+                        margin-inline: 10px;
+
+                        .tool {
+                            padding: 5px;
+                            width: 70px;
+                            height: 70px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50px;
+                            }                        }
+                    }
+                }
+            }
+            .projects {
+            padding: 0px;
+                h2 {font-size: 0.80rem;}
+                .gallery {
+                    padding-block: 10px;
+                    row-gap: 20px;
+                    column-gap: 40px;
+                    img {
+                        width: 300px;
+                    }
+                }
+                .modal{
+                    h2 {font-size: 0.70rem; margin-top: 20px;}
+                    .modal-gallery{
+                        margin-top: 35px;
+                        padding: 10px;
+                        img {
+                            width: 310px;
+                        }
+                    }
+                }            
+            }
+        }
+        .contacts {
+            padding: 10px;
+            h3 {
+                font-size: 0.80rem;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            form {
+                width: 300px;
+                p { font-weight: 0.65rem;}
+                .inputs { 
+                    label {
+                        font-size: 0.70rem;
+                    }
+                    input {
+                        width: 280px;
+                        font-size: 0.60rem;
+                    }
+                    textarea {
+                        width: 280px;
+                    }
+                }
+                button {
+                    width: 100px;
+                    font-size: 0.60rem;
+                    height: 30px;
+                }
+                .or {
+                    font-size: 0.60rem;
+                }
+                .links {
+                    gap: 10px;
+                    img {width: 20px;}
+                }
+            }
+        }
+    }   
+}
