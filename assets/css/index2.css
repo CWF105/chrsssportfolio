@@ -1,0 +1,54 @@
+/* ^Mobile Devices */
+/*^ @ Small */
+@media(min-width: 320px) and (max-width: 480px) {
+
+}
+
+/* @ Medium */
+@media(min-width: 481px) and (max-width: 600px) {
+
+}
+
+/* @ Large */
+@media(min-width: 600px) and (max-width: 767px) {
+
+}
+
+
+
+/* ------------------------------------------------------- */
+/* ^Tables */
+/* @ small */
+@media(min-width: 768px) and (max-width: 899px) {
+
+}
+
+/* @ large */
+@media(min-width: 900px) and (max-width: 1023px) {
+
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* ^Laptops and Desktops */
+/* @ small */
+@media(min-width: 124px) and (max-width: 1279px) {
+
+}
+
+/* @ medium */
+@media(min-width: 1280px) and (max-width: 1439px) {
+
+}
+
+/* @ large */
+@media(min-width: 1440px) and (max-width: 1919px) {
+
+}
+
+/* @ ultra wide */
+@media(min-width: 1920px) {
+
+}
