@@ -26,7 +26,6 @@
             } 
         }
         .aboutme {
-            margin-top: 100px;
             .container {
                 margin-left: 90px;
                 h2{
@@ -116,7 +115,6 @@
             }
         }
         .aboutme {
-            margin-top: 50px;
             p span {width: 20px;}
             .container {
                 margin-left: 10px;
@@ -197,9 +195,9 @@
             
             .nab {
                 border-bottom: 1px solid rgba(128, 128, 128, 0.464);
-               display: flex;
-               justify-content: end;
-               align-items: end;
+                display: flex;
+                justify-content: end;
+                align-items: end;
                 background-color: white;
                 position: fixed;
                 padding: 10px;
@@ -222,6 +220,7 @@
                 padding-top: 5px;
                 transition: right 0.3s ease-in-out;
                 z-index: 300;
+
                 a  {
                     text-align: center;
                     li {
@@ -252,7 +251,6 @@
             }
         }
         .aboutme {
-            margin-top: 30px;
             .container {
                 display: flex;
                 flex-direction: column;               
@@ -460,7 +458,6 @@
             }
         }
         .aboutme {
-            margin-top: 30px;
             .container {
                 display: flex;
                 flex-direction: column;               
@@ -686,7 +683,6 @@
             }
         }
         .aboutme {
-            margin-top: 30px;
             .container {
                 display: flex;
                 flex-direction: column;               
