@@ -238,7 +238,7 @@
             display: flex;
             z-index: 300;
         }
-        #onScroll {width: 25px; padding: 1px; font-size: 10px;}
+        #onScroll {width: 30px; padding: 5px; font-size: 10px;}
     }
     main {
         margin-bottom: 1px;
@@ -445,7 +445,7 @@
             display: flex;
             z-index: 300;
         }
-        #onScroll {width: 25px; padding: 1px; font-size: 10px;}
+        #onScroll {width: 30px; padding: 7px; font-size: 10px;}
     }
     main {
         margin-bottom: 1px;
@@ -670,7 +670,7 @@
             display: flex;
             z-index: 300;
         }
-        #onScroll {width: 25px; padding: 1px; font-size: 10px;}
+        #onScroll {width: 31px; padding: 7px; font-size: 10px;}
     }
     main {
         margin-bottom: 1px;
