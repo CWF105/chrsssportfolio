@@ -14,6 +14,9 @@ function openModal(title) {
         case "AR":
             document.getElementById('myModal2').style.display = 'flex';
             break;
+        case "case":
+            document.getElementById('myModal3').style.display = 'flex';
+            break;
     }
 }
 
@@ -24,6 +27,9 @@ function closeModal(title) {
             break;
         case "AR":
             document.getElementById('myModal2').style.display = 'none';
+            break;
+        case "case":
+            document.getElementById('myModal3').style.display = 'none';
             break;
     }
 }

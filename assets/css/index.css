@@ -75,17 +75,17 @@ header {
     }
     #onScroll {
         position: fixed;
-        right: 3px;
-        bottom: 3px;
+        right: 15px;
+        bottom: 15px;
         background-color: #6E07F3;
         border-radius: 5px;
-        border: 1px solid gray;
         color: white;
         text-decoration: none;
         text-align: center;
         z-index: 99;
         padding: 5px;
         width: 50px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     }
     #onScroll:hover {
         background-color: #ce2849;
